@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Plugin Name: Breakdance Custom Elements
- * Plugin URI: https://breakdance.com/
- * Description: Boilerplate plugin to save your custom elements created with Element Studio.
- * Author: Breakdance
+ * Plugin Name: Tratto Creativo Custom Elements
+ * Plugin URI: https://trattocreativo.it/
+ * Description: Custom elements created with Element Studio from Tratto Creativo.
+ * Author: Tratto Creativo
  * Author URI: https://breakdance.com/
  * License: GPLv2
  * Text Domain: breakdance
@@ -12,32 +12,32 @@
  * Version: 0.0.1
  */
 
-namespace BreakdanceCustomElements;
+namespace TrattoCreativoCustomElements;
 
 use function Breakdance\Util\getDirectoryPathRelativeToPluginFolder;
 
 add_action('breakdance_loaded', function () {
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/elements',
-        'BreakdanceCustomElements',
+        'TrattoCreativoCustomElements',
         'element',
-        'Custom Elements',
+        'Tratto Creativo Custom Elements',
         false
     );
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/macros',
-        'BreakdanceCustomElements',
+        'TrattoCreativoCustomElements',
         'macro',
-        'Custom Macros',
+        'Tratto Creativo Custom Macros',
         false,
     );
 
     \Breakdance\ElementStudio\registerSaveLocation(
         getDirectoryPathRelativeToPluginFolder(__DIR__) . '/presets',
-        'BreakdanceCustomElements',
+        'TrattoCreativoCustomElements',
         'preset',
-        'Custom Presets',
+        'Tratto Creativo Custom Presets',
         false,
     );
 },
