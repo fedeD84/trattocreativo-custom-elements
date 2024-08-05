@@ -12,19 +12,6 @@
  * Version: 0.0.1
  */
 
-if( ! class_exists( 'Smashing_Updater' ) ){
-	include_once( plugin_dir_path( __FILE__ ) . 'updater.php' );
-}
-
-$updater = new tratto_updater( __FILE__ );
-$updater->set_username( 'fedeD84' );
-$updater->set_repository( 'trattocretivo-custom-elements' );
-/*
-	$updater->authorize( 'abcdefghijk1234567890' ); // Your auth code goes here for private repos
-*/
-$updater->initialize();
-
-
 
 
 namespace TrattoCreativoCustomElements;
